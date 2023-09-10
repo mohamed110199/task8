@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 12px 30px;
+    width: 1100px;
+}
+@media (max-width: 320px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 320px;
+        grid-area:header;
+        
+    }
+}
+.logo-container {
+    
+    align-items: center;
+    gap: 12px;
+}
+.logo-container img {
+    width: 32px;
+}
+.logo-container span {
+    font-size: 24px;
+    color: #171A31;
+}
+.login-button{
+    padding: 7px 30px;
+    color: #FFFFFF;
+    background-color: #171A31;
+    border-radius: 10px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1100px;
+}
+@media (max-width: 320px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 320px;
+        }
+}
+
+.left-main{
+    width: 455px;
+}
+.left-main h1 {
+    color:#171A31 ;
+    font-size: 70px;
+    font-weight: 700px;
+    line-height: 93px;
+    
+}
+@media (max-width: 320px) {
+.left-main h1 {
+    color:#171A31 ;
+    font-size: 34px;
+    font-weight: 700px;
+    line-height: 48px;
+    width: 272px;
+    height: 96px;
+    left: 80px;
+    grid-area:h1;    }
+}
+
+.left-main p {
+    color: #171A31;
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 28px;
+    
+}
+@media (max-width: 320px) {
+    .left-main p {
+        color: #171A31;
+        opacity: 70%;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 24px;
+        width: 272px;
+        grid-area:p;
+        left: 80px;
+    }
+}
+.Get-started-button{
+    padding: 15px 40px;
+    color: #FFFFFF;
+    background-color: #171A31;
+    border-radius: 10px;   
+    
+}
+@media (max-width: 320px) {
+    .Get-started-button {
+        padding: auto;
+        left: 80px;
+        grid-area:Get-started-button;
+    }
+}    
+.right-main{
+    width: 50%;
+    left: 0;
+}
+@media (max-width: 320px) {
+    .right-main {
+        width: 296px;
+        height: 335px;
+    }
+}    
+.right-main img{
+    width: 100%;
+    
+}
+@media (max-width: 320px) {
+            .right-main img {
+                width: 296px ;
+                height: 335px;
+                grid-area:img;
+            }
+        }
